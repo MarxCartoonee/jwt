@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>JWT Decompression</title>
+  </head>
+  <body class="purple lighten-5">
+    <div class="container">
+      <h1 class="center-align red-text text-darken-1">JWT Pako</h1>
+      <div class="row flex">
+        <div class="col s6">
+          <div class="card h-100">
+            <div class="card-content">
+              <span class="card-title">Encoded compressed JWT</span>
+              <div class="divider"></div>
+              <div class="input-field">
+                <textarea class="materialize-textarea" id="jwt"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="card h-100">
+            <div class="card-content">
+              <span class="card-title">Decoded uncompressed JWT</span>
+              <div class="divider"></div>
+              <pre class="pink-text text-accent-3" id="tokenHeader"></pre>
+              <div class="divider"></div>
+              <pre class="purple-text text-accent-3" id="tokenPayload"></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>
